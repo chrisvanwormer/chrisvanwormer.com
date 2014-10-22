@@ -1,0 +1,78 @@
+header #nav {
+  @include clearfix;
+  @include background-image(linear-gradient(top, lighten($navBackground, 30), $navBackground));
+
+  width: 100%;
+
+  .navbar {
+    @include container; // susy
+    .brand {
+      @include span(6); // susy 6 columns
+      float: left;
+      font-weight: $bold;
+      font-family: $headFont;
+      text-align: center;
+      text-transform: uppercase;
+      //background: $navBrandBg;
+      a {
+        color: $navForeground;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        font-size: 1.5em;
+
+        @include breakpoint(max-width $small) {
+          font-size: 1.2em;
+          span {
+            display: none;
+          }
+        }
+      }
+      // a
+    }
+    // brand
+
+    ul {
+      @include span(6 at 6 of 12); // susy 6 columns
+      li {
+        float: left;
+        a {
+          color: $navForeground;
+          font: $mainFont;
+          font-size: 1em;
+          display:inline-block;
+          padding: 10px 30px 10px 30px;
+          text-decoration: none;
+
+          &:hover {
+            background-color: darken($light, 40);
+            color: $light;
+          } // hover
+        } // a
+      } // li
+
+      @include breakpoint($narrow $small) {
+        display:none;
+      }
+    } // ul
+
+    .menu_button {
+      display: none;
+
+      @include breakpoint($narrow $small) {
+        display: inline-block;
+        @include span(5 at 6 of 12);
+        img {
+          float:right;
+          width:24px;
+          padding-top:10px;
+          @include border-radius(50%);
+        }
+      }
+
+    }
+  }
+
+
+}
