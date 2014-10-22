@@ -63,11 +63,11 @@ header #nav {
       @include breakpoint($narrow $small) {
         display: inline-block;
         @include span(5 at 6 of 12);
-        img {
-          float:right;
-          width:24px;
-          padding-top:10px;
-          @include border-radius(50%);
+        span {
+          float: right;
+          color: $light;
+          font-size: 1.6em;
+          line-height: 150%;
         }
       }
 

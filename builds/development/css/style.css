@@ -225,13 +225,11 @@ header #nav .navbar .menu_button {
     padding-right: 0.83333%;
   }
   /* line 66, ../../../components/sass/modules/_nav.scss */
-  header #nav .navbar .menu_button img {
+  header #nav .navbar .menu_button span {
     float: right;
-    width: 24px;
-    padding-top: 10px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    line-height: 150%;
   }
 }
 
