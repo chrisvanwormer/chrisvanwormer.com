@@ -1,6 +1,8 @@
 header #nav {
   @include clearfix;
   @include background-image(linear-gradient(top, lighten($navBackground, 30), $navBackground));
+  position:fixed;
+  z-index:100;
 
   width: 100%;
 
@@ -73,6 +75,4 @@ header #nav {
 
     }
   }
-
-
 }
