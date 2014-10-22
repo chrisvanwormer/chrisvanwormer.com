@@ -1,9 +1,11 @@
 article {
   @include container(80%);
 
-  img {
-    width: 200px;
-
-    @include border-radius(50%);
+  p {
+    text-align: center;
+    img {
+      @include border-radius(50%);
+      width:200px;
+    }
   }
 }

@@ -52,7 +52,7 @@ header #nav {
         } // a
       } // li
 
-      @include breakpoint($narrow $small) {
+      @include breakpoint(0 $small) {
         display:none;
       }
     } // ul
@@ -60,7 +60,7 @@ header #nav {
     .menu_button {
       display: none;
 
-      @include breakpoint($narrow $small) {
+      @include breakpoint(0 $small) {
         display: inline-block;
         @include span(5 at 6 of 12);
         img {
