@@ -1,9 +1,39 @@
-article {
-  @include container(80%);
-
-  img {
-    width: 200px;
-
-    @include border-radius(50%);
+#main {
+  article {
+    margin-top:45px;
+    @include container(80%);
+  
+    p {
+      text-align: center;
+      img {
+        @include border-radius(50%);
+        width:200px;
+      }
+    }
   }
+}
+
+#bio {
+  background: rgba($blue, 0.8);
+  
+  h1 {
+    text-align:center;
+    color: $light;
+    @include text-shadow($dark, 2px);
+    padding-bottom:20px;
+  }
+}
+
+#contact {
+  background: lighten($green, 20);
+  
+  h1 {
+    color: $light;
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+footer {
+  background: lighten($dark, 20);
 }
