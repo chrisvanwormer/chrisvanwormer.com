@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 @include border-box-sizing; // uses border box sizing like the old IE
 
@@ -35,6 +36,7 @@ $headerSubBg      : $dark;
 
 // Font variables
 $fontfamily       : 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$smallfont        : 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $thin             : 200;
 $normal           : 400;
@@ -43,4 +45,5 @@ $heavy            : 800;
 
 $headFont         : $thin 1.5em/1.5em $fontfamily;
 $mainFont         : $thin 1em/1.5em $fontfamily;
+$buttonFont       : $thin 1em/1.5em $smallfont;
 $headColor        : lighten($blue, 20);

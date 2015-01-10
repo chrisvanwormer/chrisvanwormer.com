@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 /* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -275,12 +276,15 @@ main .section:after {
 /* line 16, ../../../components/sass/modules/_main.scss */
 main .section #name {
   font-size: 4em;
-  color: #ffffff;
   text-shadow: 0.025em 0.025em #cccccc;
   height: 1em;
   cursor: pointer;
 }
-/* line 24, ../../../components/sass/modules/_main.scss */
+/* line 21, ../../../components/sass/modules/_main.scss */
+main .section #name a {
+  color: #ffffff;
+}
+/* line 26, ../../../components/sass/modules/_main.scss */
 main .section .social-button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -293,6 +297,7 @@ main .section .social-button {
   margin-right: 8.33333%;
   height: 2em;
   color: #FFFFFF;
+  font: 200 1em/1.5em "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.675em;
   cursor: pointer;
 }
@@ -336,17 +341,17 @@ main .section .social-button {
 footer {
   background: lighten($dark, 20);
 }*/
-/* line 87, ../../../components/sass/modules/_main.scss */
-#github.hvr-icon-push:before {
+/* line 90, ../../../components/sass/modules/_main.scss */
+#github .hvr-icon-push:before {
   content: "\f092";
 }
 
-/* line 91, ../../../components/sass/modules/_main.scss */
-#facebook.hvr-icon-push:before {
+/* line 94, ../../../components/sass/modules/_main.scss */
+#facebook .hvr-icon-push:before {
   content: "\f082";
 }
 
-/* line 95, ../../../components/sass/modules/_main.scss */
-#linkedin.hvr-icon-push:before {
+/* line 98, ../../../components/sass/modules/_main.scss */
+#linkedin .hvr-icon-push:before {
   content: "\f08c";
 }

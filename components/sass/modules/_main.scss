@@ -15,10 +15,12 @@ main {
 
       #name {
         font-size: 4em;
-        color: #ffffff;
         text-shadow: 0.025em 0.025em #cccccc;
         height:1em;
         cursor:pointer;
+        a {
+          color: #ffffff;
+        }
       }
 
     .social-button {
@@ -27,6 +29,7 @@ main {
       margin-right:span(1);
       height:2em;
       color:$light;
+      font:$buttonFont;
       font-size:0.675em;
       cursor:pointer;
     }
@@ -84,14 +87,14 @@ footer {
   background: lighten($dark, 20);
 }*/
 
-#github.hvr-icon-push:before {
+#github .hvr-icon-push:before {
   content: "\f092";
 }
 
-#facebook.hvr-icon-push:before {
+#facebook .hvr-icon-push:before {
   content: "\f082";
 }
 
-#linkedin.hvr-icon-push:before {
+#linkedin .hvr-icon-push:before {
   content: "\f08c";
 }
