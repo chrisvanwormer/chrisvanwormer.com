@@ -1,4 +1,50 @@
-#main {
+main {
+  position: relative;
+  height:100%;
+  width:100%;
+  .section {
+    @include container();
+    height:100px;
+    width:38em;
+    margin:auto;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+
+      #name {
+        font-size: 4em;
+        color: #ffffff;
+        text-shadow: 0.025em 0.025em #cccccc;
+        height:1em;
+        cursor:pointer;
+      }
+
+    .social-button {
+      @include span(2);
+      margin-left:span(1);
+      margin-right:span(1);
+      height:2em;
+      color:$light;
+      font-size:0.675em;
+      cursor:pointer;
+    }
+  }
+  /*#name {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+
+  }*/
+}
+
+/*#main {
   article {
     margin-top:45px;
     @include container(80%);
@@ -36,4 +82,16 @@
 
 footer {
   background: lighten($dark, 20);
+}*/
+
+#github.hvr-icon-push:before {
+  content: "\f092";
+}
+
+#facebook.hvr-icon-push:before {
+  content: "\f082";
+}
+
+#linkedin.hvr-icon-push:before {
+  content: "\f08c";
 }
